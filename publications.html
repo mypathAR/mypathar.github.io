@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Publications - MyPath Research Lab</title>
+    <meta name="description" content="MyPath research publications on accessible routing, surface classification, wheelchair vibration sensing, and AI-powered mobility — conferences, workshops, and journals." />
+    <meta name="keywords" content="MyPath publications, accessible routing research, wheelchair surface classification, vibration sensing, RESNA, MobiQuitous, BuildSys, IEEE, AAAI, accessible navigation papers" />
+    <meta name="author" content="MyPath Research" />
+    <meta property="og:title" content="Publications - MyPath Research Lab" />
+    <meta property="og:description" content="Browse MyPath research publications on AI-powered accessible navigation, wheelchair routing, and surface classification." />
+    <meta property="og:image" content="https://mypathar.github.io/pictures/mypath-logo.png" />
+    <meta property="og:url" content="https://mypathar.github.io/publications.html" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Publications - MyPath Research Lab" />
+    <meta name="twitter:description" content="Browse MyPath research publications on AI-powered accessible navigation and wheelchair routing." />
+    <meta name="twitter:image" content="https://mypathar.github.io/pictures/mypath-logo.png" />
+    <link rel="canonical" href="https://mypathar.github.io/publications.html" />
+    <link rel="icon" type="image/png" href="pictures/mypath-logo.png" />
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -49,40 +63,88 @@
           </p>
         </div>
 
-        <!-- Filter Buttons -->
-        <div class="filter-container">
-          <button
-            class="filter-btn active"
-            data-filter="all"
-            onclick="filterPublications('all')"
-          >
-            All
-          </button>
-          <!-- <button
-            class="filter-btn"
-            data-filter="journal"
-            onclick="filterPublications('journal')"
-          >
-            Journal
-          </button> -->
-          <button
-            class="filter-btn"
-            data-filter="conference"
-            onclick="filterPublications('conference')"
-          >
-            Conference
-          </button>
-          <button
-            class="filter-btn"
-            data-filter="workshop"
-            onclick="filterPublications('workshop')"
-          >
-            Workshop
-          </button>
-        </div>
 
         <!-- Publications Grid -->
         <div class="publications-grid">
+
+          <div class="card publication-card" data-type="accepted">
+            <div class="card-header">
+              <h3 class="card-title">
+                OmniPath: A Multi-Modal Agentic Framework for Auditing Wheelchair Accessibility
+              </h3>
+              <p class="authors">
+                A. S. M. Hossain, N. Mahmud, M. O. Gani, and V. Raychoudhury
+              </p>
+              <div class="publication-meta">
+                <span>📅 IEEE COMPSAC • 2026</span>
+              </div>
+              <p class="conference-name">
+                IEEE 50th Annual Computers, Software, and Applications Conference (COMPSAC) 2026
+              </p>
+            </div>
+          </div>
+
+          <div class="card publication-card" data-type="under-review">
+            <div class="card-header">
+              <h3 class="card-title">
+                SurfaceEncoder: Semi-Supervised Representation Learning for Global Wheelchair Accessibility
+              </h3>
+              <p class="authors">
+                N. Mahmud, V. Raychoudhury, M. O. Gani, and S. Saha
+              </p>
+              <div class="publication-meta">
+                <span>📅 ECML PKDD • 2026</span>
+              </div>
+              <p class="conference-name">
+                European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD) 2026
+              </p>
+            </div>
+          </div>
+
+          <div class="card publication-card" data-type="under-review">
+            <div class="card-header">
+              <h3 class="card-title">
+                Beyond Noisy Ground Truth: Noisily Supervised Semantic Segmentation of Accessible Sidewalks and Crosswalks from Satellite Images
+              </h3>
+              <p class="authors">
+                E. Han, N. Mahmud, C. Cordon, D. Saxena, M. O. Gani, V. Raychoudhury, and J. Femiani
+              </p>
+              <div class="publication-meta">
+                <span>📅 IEEE SmartComp • 2026</span>
+              </div>
+              <p class="conference-name">
+                IEEE International Conference on Smart Computing (SmartComp) 2026
+              </p>
+            </div>
+          </div>
+
+          <div class="card publication-card" data-type="conference">
+            <div class="card-header">
+              <h3 class="card-title">
+                A Smart and Barrier-Aware Navigation System for Wheelchair Routing
+              </h3>
+              <p class="authors">
+                A. M. Hossain, N. Mahmud, E. Han, N. Advani, B. Baral, M. O. Gani, and V. Raychoudhury
+              </p>
+              <div class="publication-meta">
+                <span>📅 IEEE MASS • 2025</span>
+              </div>
+              <p class="conference-name">
+                IEEE 22nd International Conference on Mobile Ad-Hoc and Smart Systems (MASS) 2025, pp. 717–722
+              </p>
+            </div>
+            <div class="publication-actions">
+              <a
+                href="https://doi.org/10.1109/MASS66014.2025.00117"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary"
+                style="padding-top: 4px; padding-bottom: 4px; font-size: 0.95em"
+                >📄 View Paper</a
+              >
+            </div>
+          </div>
+
           <div class="card publication-card" data-type="workshop">
             <div class="card-header">
               <h3 class="card-title">
@@ -97,11 +159,18 @@
                 <span>📅 AAAI • 2025</span>
               </div>
               <p class="conference-name">
-                Workshop on AI for Urban Planning, AAAI 2025’s Workshop, 2025
+                1st Workshop on AI for Urban Planning, 39th AAAI Conference on Artificial Intelligence (AAAI-2025), Philadelphia, PA, USA, Mar. 2025
               </p>
-              <div class="badges">
-                <span class="badge badge-review">Workshop Paper</span>
-              </div>
+            </div>
+            <div class="publication-actions">
+              <a
+                href="https://arxiv.org/abs/2509.07220"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary"
+                style="padding-top: 4px; padding-bottom: 4px; font-size: 0.95em"
+                >📄 arXiv</a
+              >
             </div>
           </div>
 
@@ -122,9 +191,6 @@
                 EAI International Conference on Mobile and Ubiquitous Systems:
                 Computing, Networking, and Services (MobiQuitous)
               </p>
-              <div class="badges">
-                <span class="badge badge-conference">Conference Paper</span>
-              </div>
             </div>
 
             <div class="publication-actions">
@@ -153,9 +219,6 @@
                 <span>📅 RESNA • 2023</span>
               </div>
               <p class="conference-name">RESNA Annual Conference</p>
-              <div class="badges">
-                <span class="badge badge-conference">Conference Paper</span>
-              </div>
             </div>
             <div class="publication-actions">
               <a
@@ -185,9 +248,6 @@
                 2022 18th International Conference on Mobility, Sensing and
                 Networking (MSN)
               </p>
-              <div class="badges">
-                <span class="badge badge-conference">Conference Paper</span>
-              </div>
             </div>
             <div class="publication-actions">
               <a
@@ -217,9 +277,6 @@
               <p class="conference-name">
                 IEEE Transactions on Artificial Intelligence
               </p>
-              <div class="badges">
-                <span class="badge badge-conference">Conference Paper</span>
-              </div>
             </div>
             <div class="publication-actions">
               <a
@@ -249,9 +306,6 @@
                 Rehabilitation Engineering and Assistive Technology Society of
                 North America (RESNA)
               </p>
-              <div class="badges">
-                <span class="badge badge-conference">Conference Paper</span>
-              </div>
             </div>
             <div class="publication-actions">
               <a
@@ -282,9 +336,6 @@
                 2021 IEEE 45th Annual Computers, Software, and Applications
                 Conference (COMPSAC)
               </p>
-              <div class="badges">
-                <span class="badge badge-conference">Conference Paper</span>
-              </div>
             </div>
             <div class="publication-actions">
               <a
@@ -315,9 +366,6 @@
                 Proceedings of the 6th ACM International Conference on Systems
                 for Energy-Efficient Buildings, Cities, and Transportation
               </p>
-              <div class="badges">
-                <span class="badge badge-conference">Conference Paper</span>
-              </div>
             </div>
             <div class="publication-actions">
               <a
@@ -348,9 +396,6 @@
                 2019 IEEE International Conference on Pervasive Computing and
                 Communications Workshops (PerCom Workshops)
               </p>
-              <div class="badges">
-                <span class="badge badge-review">Workshop Paper</span>
-              </div>
             </div>
             <div class="publication-actions">
               <a

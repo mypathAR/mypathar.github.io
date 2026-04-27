@@ -6,11 +6,7 @@
     <title>MyPath Research Lab</title>
     <meta
       name="description"
-      content="AI Research - Advancing artificial intelligence through innovative research"
-    />
-    <meta
-      name="description"
-      content="MyPath is an project focused on accessible navigation for wheelchair users. Discover our innovative research, publications, and accessible routing app."
+      content="MyPath is a project focused on accessible navigation for wheelchair users. Discover our innovative research, publications, and accessible routing app."
     />
     <meta
       name="keywords"
@@ -41,12 +37,57 @@
       name="twitter:image"
       content="https://mypathar.github.io/pictures/mypath-logo.png"
     />
+    <link rel="canonical" href="https://mypathar.github.io/" />
     <link rel="icon" type="image/png" href="pictures/mypath-logo.png" />
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://mypathar.github.io/#website",
+          "url": "https://mypathar.github.io/",
+          "name": "MyPath Research Lab",
+          "description": "AI-powered accessible navigation for wheelchair users"
+        },
+        {
+          "@type": "ResearchProject",
+          "@id": "https://mypathar.github.io/#organization",
+          "name": "MyPath",
+          "url": "https://mypathar.github.io/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mypathar.github.io/pictures/mypath-logo.png"
+          },
+          "description": "AI-powered accessible navigation system providing personalized, barrier-aware routes for wheelchair users using geospatial data fusion and language models.",
+          "email": "mypath@miamioh.edu",
+          "telephone": "+1-513-529-0845",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "McVey Data Science Building 364",
+            "addressLocality": "Oxford",
+            "addressRegion": "OH",
+            "postalCode": "45056",
+            "addressCountry": "US"
+          },
+          "memberOf": [
+            { "@type": "CollegeOrUniversity", "name": "Miami University" },
+            { "@type": "CollegeOrUniversity", "name": "University of Maryland, Baltimore County" },
+            { "@type": "CollegeOrUniversity", "name": "University of Wisconsin-Milwaukee" }
+          ],
+          "funder": {
+            "@type": "GovernmentOrganization",
+            "name": "HHS/ACL/NIDILRR"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <nav class="navbar">
@@ -86,12 +127,8 @@
             geospatial data fusion and language models.
           </p>
           <div class="hero-buttons">
-            <a href="#app-tutorial" class="btn btn-primary"
-              >Watch App Tutorial</a
-            >
-            <a href="#signup-study" class="btn btn-secondary"
-              >Signup for Study</a
-            >
+            <a href="#our-app" class="btn btn-primary">Get the App</a>
+            <a href="#app-tutorial" class="btn btn-secondary">Watch Tutorial</a>
           </div>
         </div>
       </section>
@@ -191,6 +228,64 @@
                 take place during the testing phase with enough data to populate
                 the server.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our App Section -->
+      <section class="our-app" id="our-app">
+        <div class="container">
+          <div class="our-app-layout">
+            <div class="our-app-info">
+              <h2 class="our-app-title">AccessMyPath App</h2>
+              <p class="our-app-desc">
+                Download the AccessMyPath mobile app to navigate your city with
+                personalized, barrier-aware routing designed for wheelchair
+                users. Contribute crowdsourced surface data and help build a
+                more accessible world.
+              </p>
+              <ul class="our-app-features">
+                <li>Barrier-aware route planning</li>
+                <li>Real-time crowdsourced surface data</li>
+                <li>Personalized accessibility preferences</li>
+                <li>Report and map accessibility barriers</li>
+              </ul>
+              <div class="our-app-store">
+                <a
+                  href="https://apps.apple.com/us/app/accessmypath/id6483305224"
+                  target="_blank"
+                  rel="noopener"
+                  class="appstore-btn"
+                  aria-label="Download AccessMyPath on the App Store"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814 248" class="appstore-badge" aria-hidden="true">
+                    <rect width="814" height="248" rx="28" fill="#000"/>
+                    <text x="230" y="100" font-family="'SF Pro Display','-apple-system','Helvetica Neue',sans-serif" font-size="42" fill="#fff" font-weight="300">Download on the</text>
+                    <text x="230" y="178" font-family="'SF Pro Display','-apple-system','Helvetica Neue',sans-serif" font-size="72" fill="#fff" font-weight="600">App Store</text>
+                    <path d="M130 48c-8.6 0-17.7 6-23.4 6-6 0-15.2-5.7-25.2-5.5-13 .2-25 7.5-31.6 19.2-13.5 23.4-3.6 58 9.7 77 6.4 9.3 14 19.8 24.2 19.4 9.7-.4 13.4-6.3 25-6.3 11.8 0 15 6.3 25.3 6.1 10.5-.2 17-9.4 23.5-18.8 7.4-10.7 10.4-21.1 10.6-21.6-.2-.1-20.4-7.9-20.6-31.2-.2-19.5 15.9-28.9 16.6-29.4-9-13.4-23.1-14.9-28.1-14.9zm-5-43.6c-6.7 7.7-17.7 13.6-28.4 12.8-.2-10.8 3.9-22.3 10.3-29.5 7-7.9 18.7-13.7 28.4-14.1.2 11.2-3.1 22.2-10.3 30.8z" fill="#fff" transform="translate(40, 44) scale(1.1)"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="our-app-screenshots">
+              <div class="screenshot-grid">
+                <img
+                  src="pictures/screenshots/main.webp"
+                  alt="AccessMyPath app main screen"
+                  class="screenshot-img"
+                />
+                <img
+                  src="pictures/screenshots/mypathss1.jpg"
+                  alt="AccessMyPath route navigation"
+                  class="screenshot-img"
+                />
+                <img
+                  src="pictures/screenshots/mypathss2.jpg"
+                  alt="AccessMyPath accessibility preferences"
+                  class="screenshot-img"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -300,104 +395,6 @@
         </div>
       </section>
 
-      <!-- Sign Up for Study Section -->
-      <section class="signup-study" id="signup-study">
-        <div class="container">
-          <div class="page-header">
-            <h1 class="page-title">How do I sign up?</h1>
-            <p class="page-subtitle">
-              Please check if you are eligible to participate in our research
-              study.
-            </p>
-          </div>
-
-          <div class="eligibility-container">
-            <div class="participation-steps">
-              <h2>What do I have to do?</h2>
-              <p class="steps-intro">
-                If you are eligible to be a participant, you will be taking the
-                following steps:
-              </p>
-
-              <div class="steps-list">
-                <div class="step-item">
-                  <div class="step-number">1</div>
-                  <div class="step-content">
-                    <h3>Complete the necessary surveys</h3>
-                    <p>
-                      Fill out initial questionnaires about your mobility needs
-                      and navigation challenges.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="step-item">
-                  <div class="step-number">2</div>
-                  <div class="step-content">
-                    <h3>Download our MyPath App on your smartphone</h3>
-                    <p>
-                      Install the MyPath mobile application on your Android or
-                      iOS device.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="step-item">
-                  <div class="step-number">3</div>
-                  <div class="step-content">
-                    <h3>Contribute data during daily activities</h3>
-                    <p>
-                      Use our app during outdoor, wheeled mobile activities to
-                      help improve navigation technology.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="eligibility-checklist">
-              <h2>Eligibility Requirements</h2>
-              <div class="checklist-items">
-                <div class="checklist-item">
-                  <div class="checkbox-wrapper">
-                    <input type="checkbox" id="age-check" />
-                    <label for="age-check">I am 18 years or older</label>
-                  </div>
-                </div>
-                <div class="checklist-item">
-                  <div class="checkbox-wrapper">
-                    <input type="checkbox" id="wheelchair-check" />
-                    <label for="wheelchair-check"
-                      >I am an independent wheelchair user</label
-                    >
-                  </div>
-                </div>
-                <div class="checklist-item">
-                  <div class="checkbox-wrapper">
-                    <input type="checkbox" id="smartphone-check" />
-                    <label for="smartphone-check"
-                      >I carry an Android or iOS (Apple) smartphone</label
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="signup-action">
-                <p class="signup-instruction">
-                  Check all boxes to proceed with signing up for the study.
-                </p>
-                <a
-                  href="https://miamioh.qualtrics.com/jfe/form/SV_25oZUcwN96N2RPo"
-                  class="btn btn-primary signup-btn"
-                  id="signupButton"
-                >
-                  Click Here!
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- Stats Section -->
       <section class="stats">
@@ -456,29 +453,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-      // Signup form checkbox validation
-      document.addEventListener("DOMContentLoaded", function () {
-        const checkboxes = document.querySelectorAll(
-          '#signup-study input[type="checkbox"]'
-        );
-        const signupButton = document.getElementById("signupButton");
-
-        function updateSignupButton() {
-          const allChecked = Array.from(checkboxes).every(
-            (checkbox) => checkbox.checked
-          );
-          signupButton.disabled = !allChecked;
-        }
-
-        // Initially disable the button
-        updateSignupButton();
-
-        // Add event listeners to checkboxes
-        checkboxes.forEach((checkbox) => {
-          checkbox.addEventListener("change", updateSignupButton);
-        });
-      });
-    </script>
   </body>
 </html>
