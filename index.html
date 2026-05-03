@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -45,48 +45,54 @@
       rel="stylesheet"
     />
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://mypathar.github.io/#website",
-          "url": "https://mypathar.github.io/",
-          "name": "MyPath Research Lab",
-          "description": "AI-powered accessible navigation for wheelchair users"
-        },
-        {
-          "@type": "ResearchProject",
-          "@id": "https://mypathar.github.io/#organization",
-          "name": "MyPath",
-          "url": "https://mypathar.github.io/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://mypathar.github.io/pictures/mypath-logo.png"
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://mypathar.github.io/#website",
+            "url": "https://mypathar.github.io/",
+            "name": "MyPath Research Lab",
+            "description": "AI-powered accessible navigation for wheelchair users"
           },
-          "description": "AI-powered accessible navigation system providing personalized, barrier-aware routes for wheelchair users using geospatial data fusion and language models.",
-          "email": "mypath@miamioh.edu",
-          "telephone": "+1-513-529-0845",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "McVey Data Science Building 364",
-            "addressLocality": "Oxford",
-            "addressRegion": "OH",
-            "postalCode": "45056",
-            "addressCountry": "US"
-          },
-          "memberOf": [
-            { "@type": "CollegeOrUniversity", "name": "Miami University" },
-            { "@type": "CollegeOrUniversity", "name": "University of Maryland, Baltimore County" },
-            { "@type": "CollegeOrUniversity", "name": "University of Wisconsin-Milwaukee" }
-          ],
-          "funder": {
-            "@type": "GovernmentOrganization",
-            "name": "HHS/ACL/NIDILRR"
+          {
+            "@type": "ResearchProject",
+            "@id": "https://mypathar.github.io/#organization",
+            "name": "MyPath",
+            "url": "https://mypathar.github.io/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://mypathar.github.io/pictures/mypath-logo.png"
+            },
+            "description": "AI-powered accessible navigation system providing personalized, barrier-aware routes for wheelchair users using geospatial data fusion and language models.",
+            "email": "mypath@miamioh.edu",
+            "telephone": "+1-513-529-0845",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "McVey Data Science Building 364",
+              "addressLocality": "Oxford",
+              "addressRegion": "OH",
+              "postalCode": "45056",
+              "addressCountry": "US"
+            },
+            "memberOf": [
+              { "@type": "CollegeOrUniversity", "name": "Miami University" },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Maryland, Baltimore County"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Wisconsin-Milwaukee"
+              }
+            ],
+            "funder": {
+              "@type": "GovernmentOrganization",
+              "name": "HHS/ACL/NIDILRR"
+            }
           }
-        }
-      ]
-    }
+        ]
+      }
     </script>
   </head>
   <body>
@@ -259,11 +265,38 @@
                   class="appstore-btn"
                   aria-label="Download AccessMyPath on the App Store"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814 248" class="appstore-badge" aria-hidden="true">
-                    <rect width="814" height="248" rx="28" fill="#000"/>
-                    <text x="230" y="100" font-family="'SF Pro Display','-apple-system','Helvetica Neue',sans-serif" font-size="42" fill="#fff" font-weight="300">Download on the</text>
-                    <text x="230" y="178" font-family="'SF Pro Display','-apple-system','Helvetica Neue',sans-serif" font-size="72" fill="#fff" font-weight="600">App Store</text>
-                    <path d="M130 48c-8.6 0-17.7 6-23.4 6-6 0-15.2-5.7-25.2-5.5-13 .2-25 7.5-31.6 19.2-13.5 23.4-3.6 58 9.7 77 6.4 9.3 14 19.8 24.2 19.4 9.7-.4 13.4-6.3 25-6.3 11.8 0 15 6.3 25.3 6.1 10.5-.2 17-9.4 23.5-18.8 7.4-10.7 10.4-21.1 10.6-21.6-.2-.1-20.4-7.9-20.6-31.2-.2-19.5 15.9-28.9 16.6-29.4-9-13.4-23.1-14.9-28.1-14.9zm-5-43.6c-6.7 7.7-17.7 13.6-28.4 12.8-.2-10.8 3.9-22.3 10.3-29.5 7-7.9 18.7-13.7 28.4-14.1.2 11.2-3.1 22.2-10.3 30.8z" fill="#fff" transform="translate(40, 44) scale(1.1)"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 814 248"
+                    class="appstore-badge"
+                    aria-hidden="true"
+                  >
+                    <rect width="814" height="248" rx="28" fill="#000" />
+                    <text
+                      x="230"
+                      y="100"
+                      font-family="'SF Pro Display','-apple-system','Helvetica Neue',sans-serif"
+                      font-size="42"
+                      fill="#fff"
+                      font-weight="300"
+                    >
+                      Download on the
+                    </text>
+                    <text
+                      x="230"
+                      y="178"
+                      font-family="'SF Pro Display','-apple-system','Helvetica Neue',sans-serif"
+                      font-size="72"
+                      fill="#fff"
+                      font-weight="600"
+                    >
+                      App Store
+                    </text>
+                    <path
+                      d="M130 48c-8.6 0-17.7 6-23.4 6-6 0-15.2-5.7-25.2-5.5-13 .2-25 7.5-31.6 19.2-13.5 23.4-3.6 58 9.7 77 6.4 9.3 14 19.8 24.2 19.4 9.7-.4 13.4-6.3 25-6.3 11.8 0 15 6.3 25.3 6.1 10.5-.2 17-9.4 23.5-18.8 7.4-10.7 10.4-21.1 10.6-21.6-.2-.1-20.4-7.9-20.6-31.2-.2-19.5 15.9-28.9 16.6-29.4-9-13.4-23.1-14.9-28.1-14.9zm-5-43.6c-6.7 7.7-17.7 13.6-28.4 12.8-.2-10.8 3.9-22.3 10.3-29.5 7-7.9 18.7-13.7 28.4-14.1.2 11.2-3.1 22.2-10.3 30.8z"
+                      fill="#fff"
+                      transform="translate(40, 44) scale(1.1)"
+                    />
                   </svg>
                 </a>
               </div>
@@ -291,6 +324,73 @@
         </div>
       </section>
 
+      <!-- Indoor Localization and Mapping Section -->
+      <section class="indoor-localization" id="indoor-localization">
+        <div class="container">
+          <div class="indoor-localization-header">
+            <p class="section-kicker">Capstone Project</p>
+            <h2 class="section-title">Indoor Localization and Mapping</h2>
+            <p class="indoor-localization-summary">
+              This capstone work extends the MyPath accessibility effort into
+              indoor environments. Student groups explored how indoor
+              localization, map building, and route understanding can support
+              safer, more usable navigation experiences when GPS is not
+              available.
+            </p>
+          </div>
+
+          <div class="indoor-localization-grid">
+            <div class="indoor-localization-card card">
+              <h3>What the capstone groups worked on</h3>
+              <p>
+                The teams investigated practical ways to detect indoor position,
+                organize spatial information into usable maps, and connect those
+                maps to accessibility-focused routing. Their work focused on
+                helping MyPath bridge the gap between outdoor navigation and
+                indoor destinations such as buildings, hallways, and connected
+                spaces.
+              </p>
+              <ul class="indoor-localization-list">
+                <li>Indoor localization using sensor-driven approaches</li>
+                <li>Mapping indoor spaces for accessible wayfinding</li>
+                <li>
+                  Exploring how capstone teams could support MyPath's next phase
+                </li>
+              </ul>
+            </div>
+
+            <div class="indoor-localization-card card">
+              <h3>Slide Deck</h3>
+              <figure class="indoor-localization-preview">
+                <img
+                  src="assests/capstone_2025/indoor_localization_and_mapping-cover.png"
+                  alt="First slide preview of the indoor localization and mapping capstone presentation"
+                  class="indoor-localization-preview-img"
+                />
+                <figcaption>
+                  First slide preview from the capstone presentation.
+                </figcaption>
+              </figure>
+              <p>
+                Review the project presentation for a fuller walkthrough of the
+                capstone groups' process, outcomes, and proposed direction.
+              </p>
+              <a
+                href="assests/capstone_2025/indoor_localization_and_mapping.pptx"
+                class="btn btn-primary indoor-localization-btn"
+                download
+              >
+                Download Slides
+              </a>
+              <p class="indoor-localization-note">
+                PowerPoint slide deck: indoor localization and mapping capstone
+                presentation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Mobile App Tutorial Section -->
       <section class="app-tutorial" id="app-tutorial">
         <div class="container">
@@ -303,7 +403,14 @@
                 src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
                 title="MyPath Mobile App Tutorial"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
                 allowfullscreen
               >
               </iframe>
@@ -336,7 +443,14 @@
                     src="https://www.youtube.com/embed/NAVIGATION_VIDEO_ID"
                     title="Navigation Tutorial"
                     frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                    "
                     allowfullscreen
                   ></iframe>
                 </div>
@@ -357,7 +471,14 @@
                     src="https://www.youtube.com/embed/DATA_COLLECTION_VIDEO_ID"
                     title="Data Collection Tutorial"
                     frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                    "
                     allowfullscreen
                   ></iframe>
                 </div>
@@ -378,7 +499,14 @@
                     src="https://www.youtube.com/embed/BARRIER_REPORT_VIDEO_ID"
                     title="Barrier Report Tutorial"
                     frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                    "
                     allowfullscreen
                   ></iframe>
                 </div>
@@ -394,7 +522,6 @@
           </div>
         </div>
       </section>
-
 
       <!-- Stats Section -->
       <section class="stats">
